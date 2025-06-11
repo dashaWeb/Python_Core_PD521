@@ -69,17 +69,33 @@ print(f"password == 'mka5' and login == 'mka' {password == 'mka5' and login == '
 #     print("does not belong to the range")
 
 
-login = input("Enter login :: ")
-if login == "cancel":
-    print("login canceled")
-elif login == "admin" or login == "Admin" or login == "ADMIN":
-    password = input("Enter password :: ")
-    if password == "cancel":
-        print("login canceled")
-    elif password == "step":
-        print("Welcome")
-    else:
-        print("Error password")
+# login = input("Enter login :: ")
+# if login == "cancel":
+#     print("login canceled")
+# elif login == "admin" or login == "Admin" or login == "ADMIN":
+#     password = input("Enter password :: ")
+#     if password == "cancel":
+#         print("login canceled")
+#     elif password == "step":
+#         print("Welcome")
+#     else:
+#         print("Error password")
+# else:
+#     print("i don't know you")
+
+chs = int(input('''
+    Select choise
+        1 - sum
+        2 - mult
+        3 - sub
+        enter operation :: '''))
+a = 5
+b = 2
+if chs == 1:
+    print(f"{a} + {b} = {a + b}")
+elif chs == 2:
+    print(f"{a} * {b} = {a * b}")
 else:
-    print("i don't know you")
+    print("Error")
+    
 
