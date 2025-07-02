@@ -147,27 +147,72 @@
 
 
 import random
-row = 3
-col = 3
+# row = 3
+# col = 3
 
-matrix = [[random.randint(1,20) for i in range(col)] for j in range(row)]
-# print matrix
-for row in matrix:
-    for item in row:
-        print(item, end="\t")
+# matrix = [[random.randint(1,20) for i in range(col)] for j in range(row)]
+# # print matrix
+# for row in matrix:
+#     for item in row:
+#         print(item, end="\t")
+#     print()
+
+
+# clone = matrix.copy()
+# for i in range(len(matrix)):
+#     clone[i] = matrix[i].copy()
+
+# print(f"Origin :: {matrix}")
+# print(f"Clone  :: {clone}")
+
+# print(f"Origin :: {id(matrix)}")
+# print(f"Clone  :: {id(clone)}")
+
+# clone[0][0] = 22
+# print(f"Origin :: {matrix}")
+# print(f"Clone  :: {clone}")
+
+
+# row_ = 3
+# col = 4
+
+# matrix = [[random.randint(1,20) for i in range(col)] for j in range(row_)]
+
+
+# sum_total = 0
+
+# for row in matrix:
+#     sum_ = 0
+#     for item in row:
+#         print(item, end="\t")
+#         sum_ += item
+#     print(f"|  {sum_}")
+
+# print("-"*(8*col + 5) )
+
+# for j in range(col):
+#     sum_ = 0
+#     for i in range(row_):
+#         sum_+= matrix[i][j]
+#     sum_total+= sum_
+#     print(sum_, end="\t")
+
+# print(f"|  {sum_total}")
+
+
+box = [
+    [
+        [1,2,3],
+        [4,5,6]
+    ],
+    [
+        [1,2,3],
+        [4,5,6]
+    ]
+]
+for b in box:
+    for r in b:
+        for c in r:
+            print(c,end="\t")
+        print()
     print()
-
-
-clone = matrix.copy()
-for i in range(len(matrix)):
-    clone[i] = matrix[i].copy()
-    
-print(f"Origin :: {matrix}")
-print(f"Clone  :: {clone}")
-
-print(f"Origin :: {id(matrix)}")
-print(f"Clone  :: {id(clone)}")
-
-clone[0][0] = 22
-print(f"Origin :: {matrix}")
-print(f"Clone  :: {clone}")
