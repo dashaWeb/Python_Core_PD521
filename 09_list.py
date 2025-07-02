@@ -110,5 +110,13 @@ number_str = [str(item) for item in number]
 #     number_str.append(str(numb))
 print(' - '.join(number_str))
 
-marks =[int(i) for i in input("Enter marks :: ").split(" ")]
-print(marks)
+# marks =[int(i) for i in input("Enter marks :: ").split(" ")]
+# print(marks)
+
+
+numbers = [1,2,3,4,5,6,7,8,5,4,21,4,5]
+unique = []
+for num in numbers:
+    if numbers.count(num) == 1:
+        unique.append(num)
+print(unique)
