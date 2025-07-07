@@ -70,11 +70,11 @@ print(f"After  :: {colors}")
 # print(colors)
 
 print(f'List :: {colors}')
-print(f"Index :: {colors.index("green")}")
+# print(f"Index :: {colors.index("green")}")
 
 
-print(f'List :: {colors}')
-print(f"count :: {colors.count("green")}")
+# print(f'List :: {colors}')
+# print(f"count :: {colors.count("green")}")
 
 # [a - z]
 colors.sort()
