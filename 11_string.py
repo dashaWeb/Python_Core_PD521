@@ -256,29 +256,35 @@ line = "Lorem ipsum dolor sit"
 # print(str_3," \t --------> \t",re.search("\d{1,2}\/\d{1,2}\/\d{4}",str_3))
 
 
-import string
-import random
-print('Lorem'.center(50))
-print('Lorem'.center(50,'*'))
-print('\tLorem\t  rr'.expandtabs(10))
-print('Lorem'.rjust(30,'*'))
-print('Lorem'.ljust(30,'='))
-print('Lomrem'.lstrip('Lo'))
-print('Lomrem'.rstrip('m'))
-print('mLomrmem'.strip('m'))
-print('L124'.zfill(10))
+# import string
+# import random
+# print('Lorem'.center(50))
+# print('Lorem'.center(50,'*'))
+# print('\tLorem\t  rr'.expandtabs(10))
+# print('Lorem'.rjust(30,'*'))
+# print('Lorem'.ljust(30,'='))
+# print('Lomrem'.lstrip('Lo'))
+# print('Lomrem'.rstrip('m'))
+# print('mLomrmem'.strip('m'))
+# print('L124'.zfill(10))
 
-print("ttest {0:3.2f}".format(2.36589))
-print("ttest {0:4d}".format(20))
-print("ttest {0:^10}".format(20))
-print("ttest {0:>10}".format(20))
-print("ttest {0:<10}!!!".format(20))
+# print("ttest {0:3.2f}".format(2.36589))
+# print("ttest {0:4d}".format(20))
+# print("ttest {0:^10}".format(20))
+# print("ttest {0:>10}".format(20))
+# print("ttest {0:<10}!!!".format(20))
 
-print(string.ascii_letters)
-print(string.digits)
-print(string.punctuation)
+# print(string.ascii_letters)
+# print(string.digits)
+# print(string.punctuation)
 
-userLogin = ''.join(random.sample((string.ascii_lowercase),6))
-userPass = ''.join(random.sample((string.ascii_letters+string.digits+string.punctuation),8))
-print(userLogin)
-print(userPass)
+# userLogin = ''.join(random.sample((string.ascii_lowercase),6))
+# userPass = ''.join(random.sample((string.ascii_letters+string.digits+string.punctuation),8))
+# print(userLogin)
+# print(userPass)
+
+line = input("Enter string :: ")
+old = input("Enter :: ")
+new_ = input("Enter :: ")
+
+print(f"{line} \t --------> \t Count ::  {line.replace(old,new_)}")
