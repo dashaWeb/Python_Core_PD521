@@ -53,17 +53,24 @@ def printNumber(number):
 #     except Exception as msg:
 #         print(f"Block Exception :: message :: {msg}")
 
-def sum_list(list_):
-    for item in list_:
-        if item < 0:
-            raise ValueError(f"Error!!!! number is negative {item}")
-    return sum(list_)
+# def sum_list(list_):
+#     for item in list_:
+#         if item < 0:
+#             raise ValueError(f"Error!!!! number is negative {item}")
+#     return sum(list_)
 
 
-try:
-    print(sum_list([1,2,3,4,5,-8,10,2]))
-except Exception as msg:
-    print(msg)
+# try:
+#     print(sum_list([1,2,3,4,5,-8,10,2]))
+# except Exception as msg:
+#     print(msg)
 
-import random
+numb = int(input("Enter number :: "))
+
+print(numb)
+
+
+
+print("Print")
+
 
