@@ -179,5 +179,19 @@ import requests
 
 res = requests.get("https://api.privatbank.ua/p24api/pubinfo?exchange&coursid=5")
 currency = json.loads(res.content)
-print(currency)
-print(currency[0]['buy'])
+while True:
+    choise = input('''
+        1 - EUR - UAH
+        2 - UAH - EUR 
+        3 - USD - UAH
+        4 - UAH - USD 
+        0 - exit
+        ''')
+    money = int(input('Enter number of :: '))
+    match choise:
+        case '1':
+            print(f'Result :: {money * float(currency[0]["buy"])}')
+        case '2':
+            print(f'Result :: {money / float(currency[0]["sale"])}')
+    if choise == '0':
+        break
