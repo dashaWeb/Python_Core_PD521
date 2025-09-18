@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Anderson W.T",
+        "department": "Sales",
+        "position": "Manager",
+        "salary": "15000",
+        "phone": "0735478294"
+    },
+    {
+        "name": "Diaz Q.D",
+        "department": "Sales",
+        "position": "Consultant",
+        "salary": "20000",
+        "phone": "0986783620"
+    },
+    {
+        "name": "Long X.T",
+        "department": "Logistics",
+        "position": "Manager",
+        "salary": "20000",
+        "phone": "0687209538"
+    }
+]

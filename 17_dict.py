@@ -96,3 +96,4 @@ print(res)
 
 print(sorted(group, key=lambda x: x['age']))
 print(sorted(group, key=lambda x: x['name'].upper()))
+
